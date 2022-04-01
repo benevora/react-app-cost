@@ -1,17 +1,6 @@
 {
   "projects": [
     {
-      "name": "projeto teste",
-      "budget": "5000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 1
-    },
-    {
       "name": "meu projeto 3",
       "budget": "15000",
       "category": {
@@ -23,26 +12,15 @@
       "id": 2
     },
     {
-      "name": "kayden",
-      "budget": "600000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 3
-    },
-    {
-      "name": "Novo Projeto",
-      "budget": "900",
+      "name": "Projecto 05",
+      "budget": "15000",
       "category": {
         "id": "4",
         "name": "Planejamento"
       },
       "cost": 0,
       "services": [],
-      "id": 4
+      "id": 3
     }
   ],
   "categories": [
