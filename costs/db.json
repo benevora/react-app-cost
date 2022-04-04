@@ -7,13 +7,19 @@
         "id": "3",
         "name": "Design"
       },
-      "cost": 1000,
+      "cost": 1200,
       "services": [
         {
           "name": "Meu novo servico 2",
           "cost": "1000",
           "description": "faz isso aqui",
           "id": "6ad0b373-d314-4bc8-964c-9dfb1906b311"
+        },
+        {
+          "name": "Meu novo servico 3",
+          "cost": "200",
+          "description": "Faz isso aqui 2",
+          "id": "3396e14d-4f8d-4cb1-997e-0a6c8477e3ed"
         }
       ],
       "id": 2
@@ -25,8 +31,21 @@
         "id": "1",
         "name": "Infra"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 900,
+      "services": [
+        {
+          "name": "Contratar Dev MySQL",
+          "cost": "800",
+          "description": "Vai criar o banco de dados",
+          "id": "e3ef8d6f-f061-4489-87f4-db76f0951405"
+        },
+        {
+          "name": "Novo servico",
+          "cost": "100",
+          "description": "teste",
+          "id": "efe88223-4cc0-4976-bfeb-586662797d71"
+        }
+      ],
       "id": 3
     }
   ],
