@@ -1,52 +1,22 @@
 {
   "projects": [
     {
-      "name": "projeto atualizado 7",
-      "budget": "7000",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 1200,
-      "services": [
-        {
-          "name": "Meu novo servico 2",
-          "cost": "1000",
-          "description": "faz isso aqui",
-          "id": "6ad0b373-d314-4bc8-964c-9dfb1906b311"
-        },
-        {
-          "name": "Meu novo servico 3",
-          "cost": "200",
-          "description": "Faz isso aqui 2",
-          "id": "3396e14d-4f8d-4cb1-997e-0a6c8477e3ed"
-        }
-      ],
-      "id": 2
-    },
-    {
-      "name": "Projecto 08",
-      "budget": "10000",
+      "name": "Projeto 01",
+      "budget": "15000",
       "category": {
         "id": "1",
         "name": "Infra"
       },
-      "cost": 900,
+      "cost": 800,
       "services": [
         {
-          "name": "Contratar Dev MySQL",
+          "name": "dev MySQL",
           "cost": "800",
-          "description": "Vai criar o banco de dados",
-          "id": "e3ef8d6f-f061-4489-87f4-db76f0951405"
-        },
-        {
-          "name": "Novo servico",
-          "cost": "100",
-          "description": "teste",
-          "id": "efe88223-4cc0-4976-bfeb-586662797d71"
+          "description": "teste 2",
+          "id": "a219af89-d278-40d4-8b7d-952538122e12"
         }
       ],
-      "id": 3
+      "id": 1
     }
   ],
   "categories": [
