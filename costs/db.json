@@ -2,13 +2,20 @@
   "projects": [
     {
       "name": "projeto atualizado 7",
-      "budget": "14966",
+      "budget": "7000",
       "category": {
         "id": "3",
         "name": "Design"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 1000,
+      "services": [
+        {
+          "name": "Meu novo servico 2",
+          "cost": "1000",
+          "description": "faz isso aqui",
+          "id": "6ad0b373-d314-4bc8-964c-9dfb1906b311"
+        }
+      ],
       "id": 2
     },
     {
