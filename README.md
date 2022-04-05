@@ -2,6 +2,7 @@
 Project built with react 
 
 Steps to run the project after cloning it:
+
 (step 1) - Using the terminal, change directory to /costs, running the command: "cd costs"
 
 (step 2) - To install the dependencies, run the command: "npm install" 
