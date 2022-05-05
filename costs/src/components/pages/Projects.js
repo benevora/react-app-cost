@@ -51,7 +51,7 @@ function Projects() {
       .then(resp => resp.json())
       .then(() => {
         setProjects(projects.filter((project) => project.id !== id))
-        setProjectMessage('Projeto removido com sucesso!')
+        setProjectMessage('Project removed successfully!')
       })
       .catch(err => console.log(err))
 
@@ -60,8 +60,8 @@ function Projects() {
   return (
     <div className={styles.project_container}>
       <div className={styles.title_container}>
-        <h1>Meus projetos</h1>
-        <LinkButton to="/newproject" text="Criar Projeto" />
+        <h1>My projects</h1>
+        <LinkButton className={styles.btn} to="/newproject" text="Create project" />
       </div>
       {message && <Message type="success" msg={message} />}
       {projectMessage && <Message type="success" msg={projectMessage} />}
@@ -78,7 +78,7 @@ function Projects() {
         ))}
         {!removeLoading && <Loading />}
         {removeLoading && projects.length === 0 && (
-          <p>Nao ha projetos cadastrados!</p>
+          <p>There are no projects registered!</p>
         )}
       </Container>
     </div>

@@ -47,7 +47,7 @@ function Project() {
 
     // budget validation
     if (project.budget < project.cost) {
-      setMessage('O orcamento nao pode ser menor que o custo do projeto!')
+      setMessage('The budget cannot be less than the cost of the project!')
       setType('error')
       return false
     }
@@ -63,7 +63,7 @@ function Project() {
       .then((data) => {
         setProject(data)
         setShowProjectForm(false)
-        setMessage('Projeto atualizado!')
+        setMessage('Project Updated!')
         setType('success')
       })
       .catch((err) => console.log(err))
@@ -83,7 +83,7 @@ function Project() {
 
     // maximun value validation
     if (newCost > parseFloat(project.budget)) {
-      setMessage('Orcamento ultrapassado, vrifique o valor do servico')
+      setMessage('Exceeded budget, check the value of the service.')
       setType('error')
       project.services.pop()
       return false
@@ -130,7 +130,7 @@ function Project() {
       .then((data) => {
         setProject(projectUpdated)
         setServices(servicesUpdated)
-        setMessage('Servico removido com sucesso!')
+        setMessage('Service successfully removed!')
         setType('success')
       })
       .catch((err) => console.log(err))
@@ -154,48 +154,48 @@ function Project() {
           <Container customClass="column">
             {message && <Message type={type} msg={message} />}
             <div className={styles.details_container}>
-              <h1>Projeto: {project.name}</h1>
+              <h1>Project: {project.name}</h1>
               <button className={styles.btn} onClick={toggleProjectForm}>
-                {!showProjectForm ? 'Editar projeto' : 'Fechar'}
+                {!showProjectForm ? 'Edit project' : 'Close'}
               </button>
               {!showProjectForm ? (
                 <div className={styles.prject_info}>
                   <p>
-                    <span>Categorias:</span> {project.category.name}
+                    <span>Categories:</span> {project.category.name}
                   </p>
                   <p>
-                    <span>Totale de Orcamento:</span> ${project.budget}
+                    <span>Total Budget:</span> ${project.budget}
                   </p>
                   <p>
-                    <span>Totale Utilizado:</span> ${project.cost}
+                    <span>Total Used:</span> ${project.cost}
                   </p>
                 </div>
               ) : (
                 <div className={styles.prject_info}>
                   <ProjectForm 
                     handleSubmit={editPost} 
-                    btnText="Concluir edicao" 
+                    btnText="Finish editing" 
                     projectData={project} 
                   />
                 </div>
               )}
             </div>
             <div className={styles.service_form_container}>
-              <h2>Adicione o servico:</h2>
+              <h2>Add the service:</h2>
               <button className={styles.btn} onClick={toggleServiceForm}>
-                {!showServiceForm ? 'Adicionar servico' : 'Fechar'}
+                {!showServiceForm ? 'Add service' : 'Close'}
               </button>
               <div className={styles.prject_info}>
                 {showServiceForm && (
                   <ServiceForm 
                     handleSubmit={createService}
-                    btnText="Adicionar Servico"
+                    btnText="Add service"
                     projectData={project}
                   />
                 )}
               </div>
             </div>
-            <h2>Servicos</h2>
+            <h2>Services</h2>
             <Container customClass="start">
               {services.length > 0 &&
                 services.map((service) => (
@@ -209,7 +209,7 @@ function Project() {
                   />
                 ))
               }
-              {services.length === 0 && <p>Nao ha servicos cadastrados.</p> }
+              {services.length === 0 && <p>There are no registered services.</p> }
             </Container>
           </Container>
         </div>

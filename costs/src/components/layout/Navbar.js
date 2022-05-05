@@ -17,13 +17,13 @@ function Navebar() {
             <Link to="/">Home</Link>
           </li>
           <li className={styles.item}>
-            <Link to="/projects">Projetos</Link>
+            <Link to="/projects">Projects</Link>
           </li>
           <li className={styles.item}>
-            <Link to="/company">Empresa</Link>
+            <Link to="/company">Company</Link>
           </li>
           <li className={styles.item}>
-            <Link to="/contact">Contato</Link>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </Container>

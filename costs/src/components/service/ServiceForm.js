@@ -23,23 +23,23 @@ function ServiceForm({handleSubmit, btnText, projectData}) {
     <form onSubmit={submit} className={styles.form}>
       <Input 
         type="text"
-        text="Nome do servico"
+        text="Service Name"
         name="name"
-        placeholder="Insira o nome do servico"
+        placeholder="Enter the service name"
         handleOnChange={handleChange}
       />
       <Input 
         type="number"
-        text="Custo do servico"
+        text="Service cost"
         name="cost"
-        placeholder="Insira o valor total"
+        placeholder="Enter the total amount"
         handleOnChange={handleChange}
       />
       <Input 
         type="text"
-        text="Descricao do servico"
+        text="Service description"
         name="description"
-        placeholder="Descreva o servico"
+        placeholder="Describe the service"
         handleOnChange={handleChange}
       />
       <SubmitButton text={btnText} />

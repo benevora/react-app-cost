@@ -13,13 +13,13 @@ function ServiceCard({id, name, cost, description, handleRemove}) {
     <div className={styles.project_card}>
       <h4>{name}</h4>
       <p>
-        <span>Custo total:</span> ${cost}
+        <span>Total cost:</span> ${cost}
       </p>
       <p>{description}</p>
       <div className={styles.project_card_actions}>
         <button onClick={remove}>
           <BsFillTrashFill />
-          Excluir
+          Delete
         </button>
       </div>
     </div>

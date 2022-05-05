@@ -1,32 +1,36 @@
 {
   "projects": [
     {
-      "name": "Projeto 01",
-      "budget": "15000",
+      "name": "project 01",
+      "budget": "2000",
+      "category": {
+        "id": "2",
+        "name": "Development"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 1
+    },
+    {
+      "name": "project 05",
+      "budget": "30000",
       "category": {
         "id": "1",
-        "name": "Infra"
+        "name": "Infrastructure"
       },
-      "cost": 800,
-      "services": [
-        {
-          "name": "dev MySQL",
-          "cost": "800",
-          "description": "teste 2",
-          "id": "a219af89-d278-40d4-8b7d-952538122e12"
-        }
-      ],
-      "id": 1
+      "cost": 0,
+      "services": [],
+      "id": 2
     }
   ],
   "categories": [
     {
       "id": 1,
-      "name": "Infra"
+      "name": "Infrastructure"
     },
     {
       "id": 2,
-      "name": "Desenvolvimento"
+      "name": "Development"
     },
     {
       "id": 3,
@@ -34,7 +38,7 @@
     },
     {
       "id": 4,
-      "name": "Planejamento"
+      "name": "Planning"
     }
   ]
 }
