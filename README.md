@@ -1,4 +1,4 @@
-# react_App
+# react-app-cost
 
 Cost is a project manager built with react, where we can create, edit and delete projects, which are saved in a database
 
